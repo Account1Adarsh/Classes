@@ -22,7 +22,7 @@ class Unionfind{
         }
 
         int findset(int i){
-            if(p[i]=i) return i;
+            if(p[i]==i) return i;
             //path compression in else statement
             else return p[i]=findset(p[i]);
         }
